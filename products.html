@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Товары — Aiti Guru</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Roboto:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="products-page">
+    <main class="products-layout">
+      <header class="products-nav">
+        <h1 class="products-nav__title">Товары</h1>
+        <div class="products-search">
+          <span class="products-search__icon">
+            <img src="img/products-search.svg" alt="" aria-hidden="true" />
+          </span>
+          <input
+            class="products-search__input"
+            type="search"
+            placeholder="Найти"
+          />
+        </div>
+      </header>
+
+      <section class="products-content" aria-labelledby="products-title">
+        <header class="products-header">
+          <h2 id="products-title" class="products-header__title">
+            Все позиции
+          </h2>
+          <div class="products-header__actions">
+            <button class="icon-button" type="button" aria-label="Обновить">
+              <img src="img/products-refresh.svg" alt="" aria-hidden="true" />
+            </button>
+            <button class="primary-button" type="button">
+              <span class="primary-button__icon">
+                <img src="img/products-plus.svg" alt="" aria-hidden="true" />
+              </span>
+              <span>Добавить</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="products-table-wrapper">
+          <table class="products-table">
+            <thead>
+              <tr>
+                <th scope="col">
+                  <div class="products-table__name-cell">
+                    <span class="checkbox" aria-hidden="true"></span>
+                    <span>Наименование</span>
+                  </div>
+                </th>
+                <th scope="col">Вендор</th>
+                <th scope="col">Артикул</th>
+                <th scope="col">Оценка</th>
+                <th scope="col">Цена, ₽</th>
+                <th scope="col" aria-label="Действия"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="products-table__row-group">
+                <td class="products-table__row">
+                  <div class="products-table__name-cell">
+                    <span class="checkbox" aria-hidden="true"></span>
+                    <span
+                      class="products-table__photo"
+                      aria-hidden="true"
+                    ></span>
+                    <div class="products-table__name-text">
+                      <span class="products-table__name-main">
+                        USB Флэшкарта 16GB
+                      </span>
+                      <span class="products-table__name-sub">Аксессуары</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="products-table__vendor">Samsung</td>
+                <td class="products-table__sku">RCH45Q1A</td>
+                <td class="products-table__rating">4.3/5</td>
+                <td class="products-table__price">
+                  <span class="products-table__price-main">48 652</span
+                  ><span class="products-table__price-fraction">,00</span>
+                </td>
+                <td>
+                  <div class="products-table__actions">
+                    <button
+                      class="products-table__plus"
+                      type="button"
+                      aria-label="Добавить товар"
+                    >
+                      <img
+                        src="img/products-row-plus.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </button>
+                    <span class="products-table__dots" aria-hidden="true">
+                      <img src="img/products-dots-plus.svg" alt="" />
+                    </span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="products-table__row-group">
+                <td class="products-table__row">
+                  <div class="products-table__name-cell">
+                    <span class="checkbox" aria-hidden="true"></span>
+                    <span
+                      class="products-table__photo"
+                      aria-hidden="true"
+                    ></span>
+                    <div class="products-table__name-text">
+                      <span class="products-table__name-main">
+                        Утюг Braun TexStyle 9
+                      </span>
+                      <span class="products-table__name-sub">
+                        Бытовая техника
+                      </span>
+                    </div>
+                  </div>
+                </td>
+                <td class="products-table__vendor">TexStyle</td>
+                <td class="products-table__sku">DFCHQ1A</td>
+                <td class="products-table__rating">4.9/5</td>
+                <td class="products-table__price">
+                  <span class="products-table__price-main">4 233</span
+                  ><span class="products-table__price-fraction">,00</span>
+                </td>
+                <td>
+                  <div class="products-table__actions">
+                    <button
+                      class="products-table__plus"
+                      type="button"
+                      aria-label="Добавить товар"
+                    >
+                      <img
+                        src="img/products-row-plus.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </button>
+                    <span class="products-table__dots" aria-hidden="true">
+                      <img src="img/products-dots-plus.svg" alt="" />
+                    </span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="products-table__row-group products-table__row--active">
+                <td class="products-table__row">
+                  <div class="products-table__name-cell">
+                    <span class="checkbox" aria-hidden="true"></span>
+                    <span
+                      class="products-table__photo"
+                      aria-hidden="true"
+                    ></span>
+                    <div class="products-table__name-text">
+                      <span class="products-table__name-main">
+                        Смартфон Apple iPhone 17
+                      </span>
+                      <span class="products-table__name-sub">Телефоны</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="products-table__vendor">Apple</td>
+                <td class="products-table__sku">GUYHD2-X4</td>
+                <td class="products-table__rating">4.7/5</td>
+                <td class="products-table__price">
+                  <span class="products-table__price-main">88 652</span
+                  ><span class="products-table__price-fraction">,00</span>
+                </td>
+                <td>
+                  <div class="products-table__actions">
+                    <button
+                      class="products-table__plus"
+                      type="button"
+                      aria-label="Добавить товар"
+                    >
+                      <img
+                        src="img/products-row-plus.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </button>
+                    <span class="products-table__dots" aria-hidden="true">
+                      <img src="img/products-dots-plus.svg" alt="" />
+                    </span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="products-table__row-group">
+                <td class="products-table__row">
+                  <div class="products-table__name-cell">
+                    <span class="checkbox" aria-hidden="true"></span>
+                    <span
+                      class="products-table__photo"
+                      aria-hidden="true"
+                    ></span>
+                    <div class="products-table__name-text">
+                      <span class="products-table__name-main">
+                        Игровая консоль PlaySta...
+                      </span>
+                      <span class="products-table__name-sub">
+                        Игровые приставки
+                      </span>
+                    </div>
+                  </div>
+                </td>
+                <td class="products-table__vendor">Sony</td>
+                <td class="products-table__sku">HT45Q21</td>
+                <td class="products-table__rating">4.1/5</td>
+                <td class="products-table__price">
+                  <span class="products-table__price-main">56 236</span
+                  ><span class="products-table__price-fraction">,00</span>
+                </td>
+                <td>
+                  <div class="products-table__actions">
+                    <button
+                      class="products-table__plus"
+                      type="button"
+                      aria-label="Добавить товар"
+                    >
+                      <img
+                        src="img/products-row-plus.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </button>
+                    <span class="products-table__dots" aria-hidden="true">
+                      <img src="img/products-dots-plus.svg" alt="" />
+                    </span>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="products-table__row-group">
+                <td class="products-table__row">
+                  <div class="products-table__name-cell">
+                    <span class="checkbox" aria-hidden="true"></span>
+                    <span
+                      class="products-table__photo"
+                      aria-hidden="true"
+                    ></span>
+                    <div class="products-table__name-text">
+                      <span class="products-table__name-main">
+                        Фен Dyson Supersonic Nural
+                      </span>
+                      <span class="products-table__name-sub">Электроника</span>
+                    </div>
+                  </div>
+                </td>
+                <td class="products-table__vendor">Dyson</td>
+                <td class="products-table__sku">FJHHGF-CR4</td>
+                <td class="products-table__rating">
+                  <span style="color: #f11010">3.3</span>/5
+                </td>
+                <td class="products-table__price">
+                  <span class="products-table__price-main">48 652</span
+                  ><span class="products-table__price-fraction">,00</span>
+                </td>
+                <td>
+                  <div class="products-table__actions">
+                    <button
+                      class="products-table__plus"
+                      type="button"
+                      aria-label="Добавить товар"
+                    >
+                      <img
+                        src="img/products-row-plus.svg"
+                        alt=""
+                        aria-hidden="true"
+                      />
+                    </button>
+                    <span class="products-table__dots" aria-hidden="true">
+                      <img src="img/products-dots-plus.svg" alt="" />
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <footer class="products-footer">
+          <p class="products-footer__info">
+            <span>Показано </span><strong>1-20</strong><span> из 120</span>
+          </p>
+
+          <nav
+            class="pagination"
+            aria-label="Навигация по страницам списка товаров"
+          >
+            <button class="pagination__arrow" type="button" aria-label="Назад">
+              <img src="img/products-page-prev.svg" alt="" aria-hidden="true" />
+            </button>
+            <div class="pagination__numbers">
+              <button
+                class="pagination__item pagination__item--active"
+                type="button"
+              >
+                1
+              </button>
+              <button class="pagination__item" type="button">2</button>
+              <button class="pagination__item" type="button">3</button>
+              <button class="pagination__item" type="button">4</button>
+              <button class="pagination__item" type="button">5</button>
+            </div>
+            <button class="pagination__arrow" type="button" aria-label="Вперёд">
+              <img src="img/products-page-next.svg" alt="" aria-hidden="true" />
+            </button>
+          </nav>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
